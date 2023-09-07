@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <h1>Payment Form</h1>
+    <p>Required fields are followed by <abbr title="Required">*</abbr>.</p>
+
+    <form action="#" method="post">
+
+        <h2>Contact Information</h2>
+        <label for="name" style="text-align: right;">Name:*</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email" style="text-align: right;">E-mail:*</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="password" style="text-align: right;">Password:*</label>
+        <input type="password" id="password" name="password" required><br>
+
+
+        <h2>Payment Information</h2>
+        <label for="card-type" style="text-align: right;">Card Type:</label>
+        <select id="card-type" name="card-type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+            <option value="amex">American Express</option>
+        </select><br>
+
+        <label for="card-number" style="text-align: right;">Card Number:*</label>
+        <input type="text" id="card-number" name="card-number" required><br>
+
+        <label for="expiration-date" style="text-align: right;">Expiration Date:*</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="dd/mm/yyyy, hh:mm" required><br>
+
+
+        <hr>
+
+
+        <label>
+            Agree with terms and conditions
+            <input type="checkbox" id="agree" name="agree" required>
+        </label><br>
+
+        <button type="submit">Validate the Payment</button>
+    </form>
+
+</body>
+</html>

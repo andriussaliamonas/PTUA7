@@ -5,9 +5,23 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <h1>Mano Kontaktai</h1>
-    <h3>Nuorodos:</h3>
-        <li><a href="index.html">Atgal į pagrindinį puslapį (iš kontaktai.html)</a></li>
+
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    <label for="vardas">Jūsų vardas:</label><br>
+    <input type="text" id="vardas" name="vardas" required><br>
+
+    <label for="pastas">Jūsų el. pašto adresas:</label><br>
+    <input type="email" id="pastas" name="pastas" required><br>
+
+    <label for="tema">Žinutės tema:</label><br>
+    <input type="text" id="tema" name="tema" required><br>
+
+    <label for="zinute">Žinutė:</label><br>
+    <textarea id="zinute" name="zinute" rows="4" cols="18" required></textarea><br>
+
+    <input type="submit" value="Siųsti žinutę">
+</form>
 
 </body>
 </html>
+
