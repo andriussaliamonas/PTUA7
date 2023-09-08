@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    /* 1. Nuspalvinkite visus sąrašų elementus mėlynai */
+
+ul, li, span {
+    color: blue;
+}
+
+/* 2. Uždėkite pakeiskite pagrindinio sąrašo antro elemento aukštį ir plotį į 100px X 100px */
+
+ul > li:nth-child(2) {
+    width: 100px;
+    height: 100px;
+}
+
+/* 3. Pagrindinio sąrašo trečiojo elemento trečiąjį elementą bei pagrindinio sąrašo pirmojo elemento antrąjį elementą nuspalvinti raudonai */
+
+ul:nth-child(1) > li:nth-child(3) > ul > li:nth-child(3),
+ul:nth-child(3) > li:nth-child(1) > ul > li:nth-child(2) {
+    color: red;
+}
+
+/* 4. Kas antram elementui uždėti teksto pastorinimą */
+
+ul > li:nth-child(even) {
+    padding: 10px;
+}
+
+  </style>
+</head>
+<body>
+<ul>
+   <li>
+       <ul>
+           <li><span>Item 1</span></li>
+           <li><span>Item 2</span></li>
+           <li><span>Item 3</span></li>
+       </ul>
+   </li>
+   <li>
+       <ul>
+           <li><span>Item 1</span></li>
+           <li><span>Item 2</span></li>
+           <li><span>Item 3</span></li>
+       </ul>
+   </li>
+   <li>
+       <ul>
+           <li><span>Item 1</span></li>
+           <li><span>Item 2</span></li>
+           <li><span>Item 3</span></li>
+       </ul>
+   </li>
+</ul>
+</body>
+</html>
