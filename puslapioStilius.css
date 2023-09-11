@@ -1,0 +1,89 @@
+/* Atstatyti pagrindinius stilius geresnei suderinamumui */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stiliavimas antraštės daliai */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+
+
+.logo {
+    max-width: 100px;
+}
+
+img {
+    width: 100px;
+}
+
+.pavadinimas {
+    text-align: center;
+    flex-grow: 1;
+    font-size: 24px;
+}
+
+/* Stiliavimas pagrindiniam turiniui */
+main {
+    display: flex;
+    align-items: flex-start;
+}
+
+.paieškos-laukas {
+    text-align: right;
+    margin-right: 20px;
+    margin-top: 10px;
+    flex-shrink: 0;
+}
+
+.paieškos-laukas form {
+    display: flex;
+    align-items: center;
+}
+
+.paieškos-laukas input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.paieškos-laukas button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+}
+
+.sone-kairysis-meniu {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.pagrindinė-dalis {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.reklamos-zona {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Stiliavimas apatiniam skyriui */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
