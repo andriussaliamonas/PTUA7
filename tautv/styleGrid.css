@@ -1,0 +1,123 @@
+.sachmatai {
+  display: grid;
+  grid-template-columns: repeat(5, 110px);
+  grid-template-rows: repeat(5, 110px);
+}
+
+.sachmatai > div {
+  margin: 10px;
+  padding: 10px;
+  background-color: #ccc;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black; /* Add this line to set a black border */
+}
+
+.sachmatai > div {
+  background-color: #ccc;
+}
+
+.sachmatai > div:nth-child(1) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(2) {
+  background-color: blue;
+}
+
+.sachmatai > div:nth-child(3) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(4) {
+  background-color: green;
+}
+
+.sachmatai > div:nth-child(5) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(6) {
+  background-color: blue;
+}
+
+.sachmatai > div:nth-child(7) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(8) {
+  background-color: green;
+}
+
+.sachmatai > div:nth-child(9) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(10) {
+  background-color: blue;
+}
+
+.sachmatai > div:nth-child(11) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(12) {
+  background-color: green;
+}
+
+.sachmatai > div:nth-child(13) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(14) {
+  background-color: blue;
+}
+
+.sachmatai > div:nth-child(15) {
+  background-color: grey;
+}
+
+
+.sachmatai > div:nth-child(16) {
+  background-color: pink;
+}
+
+.sachmatai > div:nth-child(17) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(18) {
+  background-color: pink;
+}
+
+.sachmatai > div:nth-child(19) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(20) {
+  background-color: pink;
+}
+
+
+.sachmatai > div:nth-child(21) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(22) {
+  background-color: pink;
+}
+
+.sachmatai > div:nth-child(23) {
+  background-color: grey;
+}
+
+.sachmatai > div:nth-child(24) {
+  background-color: pink;
+}
+
+.sachmatai > div:nth-child(25) {
+  background-color: grey;
+}

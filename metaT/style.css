@@ -1,0 +1,50 @@
+/* Default styles for the grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        'x yyy'
+        'x center center center w'
+        'x center center center w'
+        'x z z z z';
+    gap: 10px;
+}
+
+.item {
+    padding: 20px;
+    text-align: center;
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+
+/* Media query for screens with a minimum width of 600px */
+@media only screen and (min-width: 300px) {
+    .container {
+        grid-template-areas:
+            'x yyy'
+            'x center center center w'
+            'x center center center w'
+            'x z z z z';
+    }
+}
+
+/* Media query for screens with a minimum width of 1000px */
+@media only screen and (min-width: 600px) {
+    .container {
+        grid-template-areas:
+            'x yyy'
+            'x center center center w'
+            'x center center center w'
+            'x z z z z';
+    }
+}
+
+/* Media query for screens with a minimum width of 2000px */
+@media only screen and (min-width: 1800px) {
+    .container {
+        grid-template-areas:
+            'x yyy'
+            'x center center center w'
+            'x center center center w'
+            'x z z z z';
+    }
+}

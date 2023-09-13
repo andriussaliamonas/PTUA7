@@ -1,0 +1,174 @@
+.sachmatai {
+  position: relative;
+  width: 660px;
+  height: 660px;
+}
+
+.sachmatai > div {
+  background-color: #ccc;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  margin: 20px; /* Adjust margin for spacing */
+}
+
+/* Define positions for specific divs */
+.sachmatai > div:nth-child(1) {
+  background-color: grey;
+  top: 0;
+  left: 0;
+}
+
+.sachmatai > div:nth-child(2) {
+  background-color: blue;
+  top: 0;
+  left: 140px;
+}
+
+.sachmatai > div:nth-child(3) {
+  background-color: grey;
+  top: 0;
+  left: 280px;
+}
+
+.sachmatai > div:nth-child(4) {
+  background-color: green;
+  top: 0;
+  left: 420px;
+}
+
+.sachmatai > div:nth-child(5) {
+  background-color: grey;
+  top: 0;
+  left: 560px;
+}
+
+/* Define positions for the second row */
+.sachmatai > div:nth-child(6) {
+  background-color: blue;
+  top: 140px;
+  left: 0;
+}
+
+.sachmatai > div:nth-child(7) {
+  background-color: grey;
+  top: 140px;
+  left: 140px;
+}
+
+.sachmatai > div:nth-child(8) {
+  background-color: green;
+  top: 140px;
+  left: 280px;
+}
+
+.sachmatai > div:nth-child(9) {
+  background-color: grey;
+  top: 140px;
+  left: 420px;
+}
+
+.sachmatai > div:nth-child(10) {
+  background-color: blue;
+  top: 140px;
+  left: 560px;
+}
+
+/* Define positions for the third row */
+.sachmatai > div:nth-child(11) {
+  background-color: grey;
+  top: 280px;
+  left: 0;
+}
+
+.sachmatai > div:nth-child(12) {
+  background-color: green;
+  top: 280px;
+  left: 140px;
+}
+
+.sachmatai > div:nth-child(13) {
+  background-color: grey;
+  top: 280px;
+  left: 280px;
+}
+
+.sachmatai > div:nth-child(14) {
+  background-color: blue;
+  top: 280px;
+  left: 420px;
+}
+
+.sachmatai > div:nth-child(15) {
+  background-color: grey;
+  top: 280px;
+  left: 560px;
+}
+
+/* Define positions for the fourth row */
+.sachmatai > div:nth-child(16) {
+  background-color: pink;
+  top: 420px;
+  left: 0;
+}
+
+.sachmatai > div:nth-child(17) {
+  background-color: grey;
+  top: 420px;
+  left: 140px;
+}
+
+.sachmatai > div:nth-child(18) {
+  background-color: pink;
+  top: 420px;
+  left: 280px;
+}
+
+.sachmatai > div:nth-child(19) {
+  background-color: grey;
+  top: 420px;
+  left: 420px;
+}
+
+.sachmatai > div:nth-child(20) {
+  background-color: pink;
+  top: 420px;
+  left: 560px;
+}
+
+/* Define positions for the fifth row */
+.sachmatai > div:nth-child(21) {
+  background-color: grey;
+  top: 560px;
+  left: 0;
+}
+
+.sachmatai > div:nth-child(22) {
+  background-color: pink;
+  top: 560px;
+  left: 140px;
+}
+
+.sachmatai > div:nth-child(23) {
+  background-color: grey;
+  top: 560px;
+  left: 280px;
+}
+
+.sachmatai > div:nth-child(24) {
+  background-color: pink;
+  top: 560px;
+  left: 420px;
+}
+
+.sachmatai > div:nth-child(25) {
+  background-color: grey;
+  top: 560px;
+  left: 560px;
+}
