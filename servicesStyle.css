@@ -1,0 +1,64 @@
+/* Reset some default styles */
+body, h1, h2, p, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style the main content */
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.about-section {
+    font-size: 24px;
+}
+
+.about-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: left;
+}
+
+/* Style the footer (minimal) */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
