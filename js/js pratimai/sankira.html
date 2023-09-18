@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sankirtoa</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        let a = -5;
+        let b = 0;
+        let c = -4;
+        let d = 4;
+        let x = '???';
+        let y = '???';
+    
+        if (a > b || d < c || d < a || c > b) {
+          window.alert('Sankitra negalima');
+        } else {
+          if (c <= a && a <= d) {
+              x = 'a=' + a;
+          } 
+          if (a <= c && c <= b) {
+              x = 'c=' + c;
+          }
+          if (a <= d && d <= b){
+              y = 'd=' + d;
+          }
+          if (c <= b && b <= d){
+              y = 'b=' + b;
+          }
+    
+          let atsakymas = x + ' ir ' + y;
+    
+          if (atsakymas !== '??? ir ???') {
+              document.getElementById('ats').innerHTML = 'Rasta sankirta tarp ' + atsakymas;
+          } else {
+              document.getElementById('ats').innerHTML = 'Kažkas blogai, patikrink savo kodą.';
+          }
+        }
+
+    </script>
+</body>
+</html>

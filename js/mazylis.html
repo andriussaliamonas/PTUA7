@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <title>Mažiausias skaičius</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        // Skaiciai:
+        let a = 3;
+        let b = 1;
+        let c = 5;
+
+        let result;
+
+        // Rasti mažiausią iš trijų skaičių:
+        if (a < b && a < c && a != b && a != c) {
+            result = a;
+        } else if (b < a && b < c) {
+            result = b;
+        } else if (c < a && c < b) {
+            result = c;
+        } else {
+            result = "Yra bent du lygūs mažiausi skaičiai.";
+        }
+
+        // Patikrinimas, ar mažiausias skaičius nėra lygus nei vienam iš trijų:
+        if (result != a && result != b && result != c) {
+            // Jei sąlyga tenkinama, tai result yra mažiausias ir nelygus nei vienam iš trijų.
+            document.getElementById("output").innerHTML = `Mažiausias ir nelygus skaičius: ${result}`;
+        } else {
+            document.getElementById("output").innerHTML = "Nėra tinkamo skaičiaus, kuris yra nelygus nei vienam iš trijų.";
+        }
+    </script>
+</body>
+</html>
