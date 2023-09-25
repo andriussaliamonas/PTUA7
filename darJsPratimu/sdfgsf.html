@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        form {
+            width: 400px;
+            margin: 50px auto;
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #message-valid, #message-invalid {
+            padding: 10px;
+            display: none;
+            width: 100%;
+        }
+
+        #message-valid {
+            background-color: green;
+            color: white;
+        }
+
+        #message-invalid {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="number">Įveskite skaičių:</label>
+        <input id="number" name="number" type="text" placeholder="Enter Number" />
+    </form>
+    <div id="message-valid" class="valid"></div>
+    <div id="message-invalid" class="invalid"></div>
+    <script>
+        const input = document.getElementById('number');
+        const form = document.querySelector('form');
+        const messageValid = document.getElementById('message-valid');
+        const messageInvalid = document.getElementById('message-invalid');
+
+        input.addEventListener('keyup', (event) => {
+            const inputValue = input.value;
+
+            if (!isNaN(inputValue) && inputValue >= 0 && inputValue <= 99) {
+                messageValid.textContent = 'Tai yra skaičius tarp 0 ir 99';
+                messageValid.style.display = 'block';
+                messageInvalid.style.display = 'none';
+            } else {
+                messageInvalid.textContent = `Tai yra ne skaičius ARBA mažesnis už 0 ARBA didesnis už 99, jūs įvedėte ${inputValue}`;
+                messageInvalid.style.display = 'block';
+                messageValid.style.display = 'none';
+            }
+        });
+
+        // Prevent the form from submitting when pressing Enter
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+        });
+    </script>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

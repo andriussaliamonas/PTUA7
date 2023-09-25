@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+form {
+    width: 400px;
+    margin: 50px auto;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#number-wrapper {
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+#message-valid,
+#message-invalid {
+    padding: 10px;
+    display: none;
+    width: 100%;
+}
+
+#message-valid {
+    background-color: green;
+    color: white;
+}
+
+#message-invalid {
+    background-color: red;
+    color: white;
+}

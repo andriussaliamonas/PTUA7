@@ -1,0 +1,6 @@
+{
+    "name": { "type": "text", "label": "Vardas" },
+    "surename": { "type": "text", "label": "Pavarde" },
+    "email": { "type": "email", "label": "El. pašto adresas" },
+    "message": { "type": "textarea", "label": "Žinutė mums" }
+}

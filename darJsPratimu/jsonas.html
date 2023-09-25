@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML forma</title>
+</head>
+<body>
+  <form action="/submit" method="post">
+    <h1>Susisiekite su mumis</h1>
+    <input type="text" name="name" placeholder="Vardas" />
+    <input type="text" name="surename" placeholder="Pavardė" />
+    <input type="email" name="email" placeholder="El. pašto adresas" />
+    <textarea name="message" placeholder="Žinutė mums"></textarea>
+    <input type="submit" value="Siųsti" />
+  </form>
+
+  <script>
+    // Įrašome formos duomenis į `localStorage`
+    const form = document.querySelector("form");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const data = new FormData(form);
+
+      localStorage.setItem("data", JSON.stringify(data));
+    });
+
+    // Pavaizduojame formos duomenis
+    const data = JSON.parse(localStorage.getItem("data"));
+
+    const output = document.querySelector("output");
+    output.innerHTML = `
+      Vardas: ${data.name}
+      Pavardė: ${data.surename}
+      El. pašto adresas: ${data.email}
+      Žinutė: ${data.message}
+    `;
+  </script>
+</body>
+</html>
