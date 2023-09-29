@@ -1,0 +1,15 @@
+body {
+  font-family: sans-serif;
+}
+
+#container {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+#image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
